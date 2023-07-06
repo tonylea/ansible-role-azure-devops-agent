@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include deadrobot.azure_devops_agent"
+      ansible.builtin.include_role:
+        name: "deadrobot.azure_devops_agent"
